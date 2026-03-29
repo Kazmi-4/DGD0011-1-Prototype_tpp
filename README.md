@@ -80,6 +80,6 @@ Extensive debugging was performed to ensure the project remains stable in a stan
 ---
 
 ## 📝 Developer Information
-* **Developer Name:** [Your Name]
-* **Student Number:** [Your Student Number]
-* **Course:** [Course Name/Assignment Name]
+* **Developer Name:** Qasim Kazmi
+* **Student Number:** 240008056
+* **Course:** DGD0011-1 - Homework 1
