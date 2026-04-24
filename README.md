@@ -1,3 +1,20 @@
+Assignment Fulfillment Summary
+This prototype successfully implements all required technical systems outlined in the assignment rubric:
+
+Core Mechanics: Implemented a custom 3D character controller utilizing full Root Motion for locomotion, alongside a procedural vaulting mechanic (using Animator Target Matching) and a decouple "Data Token" collectible system.
+
+Lighting: The scene utilizes the primary Directional Light set to Realtime for dynamic shadows, alongside a custom Point Light set to Baked mode, which was successfully calculated and baked onto the static level geometry.
+
+Raycasting: Implemented a dual-step Raycast system to drive the vaulting logic. A forward ray scans for obstacle layers, while a secondary downward ray dynamically calculates the exact Y-coordinate of the ledge to accurately position the character's hands.
+
+Camera Management: Integrated the Cinemachine package to manage three distinct Virtual Cameras (Standard Follow, Action Sprint, and Static Security/CCTV). A Custom Blends asset was created and assigned to the Cinemachine Brain to manage specific transition times and easing styles (e.g., Ease In Out, instant Cut) when toggling between camera priorities.
+
+Visual Effects: Developed a custom Shader Graph (HoloTokenShader) for the URP. The graph utilizes a Fresnel Effect node multiplied by a high-intensity HDR Color node to create a dynamic, holographic glowing-edge effect, which was applied as a material to the in-game collectibles.
+
+
+
+
+
 # 📑 PROJECT DOCUMENTATION: URBAN COURIER
 
 **Developer Name:** Qasim Kazmi  
