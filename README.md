@@ -1,15 +1,61 @@
-Assignment Fulfillment Summary
-This prototype successfully implements all required technical systems outlined in the assignment rubric:
+# Assignment Fulfillment Summary
 
-Core Mechanics: Implemented a custom 3D character controller utilizing full Root Motion for locomotion, alongside a procedural vaulting mechanic (using Animator Target Matching) and a decouple "Data Token" collectible system.
+This prototype successfully implements all required technical systems outlined in the assignment rubric.
 
-Lighting: The scene utilizes the primary Directional Light set to Realtime for dynamic shadows, alongside a custom Point Light set to Baked mode, which was successfully calculated and baked onto the static level geometry.
+---
 
-Raycasting: Implemented a dual-step Raycast system to drive the vaulting logic. A forward ray scans for obstacle layers, while a secondary downward ray dynamically calculates the exact Y-coordinate of the ledge to accurately position the character's hands.
+## 🎮 Core Mechanics
+- Implemented a custom **3D Character Controller** utilizing full **Root Motion** for locomotion.
+- Developed a **procedural vaulting system** using **Animator Target Matching**.
+- Created a decoupled **“Data Token” collectible system** for flexible gameplay integration.
 
-Camera Management: Integrated the Cinemachine package to manage three distinct Virtual Cameras (Standard Follow, Action Sprint, and Static Security/CCTV). A Custom Blends asset was created and assigned to the Cinemachine Brain to manage specific transition times and easing styles (e.g., Ease In Out, instant Cut) when toggling between camera priorities.
+---
 
-Visual Effects: Developed a custom Shader Graph (HoloTokenShader) for the URP. The graph utilizes a Fresnel Effect node multiplied by a high-intensity HDR Color node to create a dynamic, holographic glowing-edge effect, which was applied as a material to the in-game collectibles.
+## 💡 Lighting
+- Configured the primary **Directional Light** in **Realtime mode** to enable dynamic shadows.
+- Added a secondary **Point Light** set to **Baked mode**.
+- Successfully baked lighting onto static level geometry for optimized performance.
+
+---
+
+## 🎯 Raycasting System
+- Implemented a **dual-step Raycast system** to drive vaulting logic:
+  - **Forward Raycast** detects obstacles on specified layers.
+  - **Downward Raycast** calculates the exact **Y-coordinate of the ledge**, ensuring accurate hand placement during vaulting.
+
+---
+
+## 🎥 Camera Management
+- Integrated **Cinemachine** for advanced camera control.
+- Configured three distinct **Virtual Cameras**:
+  - Standard Follow Camera
+  - Action Sprint Camera
+  - Static Security / CCTV Camera
+- Created and assigned a **Custom Blends asset** to the Cinemachine Brain:
+  - Supports transitions such as **Ease In Out** and **instant Cut**.
+  - Enables smooth and context-aware camera switching based on priority.
+
+---
+
+## ✨ Visual Effects
+- Developed a custom **Shader Graph** (*HoloTokenShader*) for **URP**.
+- Features:
+  - **Fresnel Effect Node** for edge highlighting
+  - Multiplied with a **high-intensity HDR Color**
+- Result: A dynamic **holographic glowing-edge effect**, applied to collectible items.
+
+---
+
+## ✅ Summary
+The project demonstrates integration of:
+- Advanced character movement systems
+- Procedural interaction mechanics
+- Optimized lighting workflows
+- Physics-based detection systems
+- Cinematic camera control
+- Custom shader-based visual effects
+
+All systems are implemented with modularity and scalability in mind.
 
 
 
